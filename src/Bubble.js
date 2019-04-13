@@ -101,8 +101,8 @@ export default class Bubble extends React.PureComponent {
     if (currentMessage.sent || currentMessage.received) {
       return (
         <View style={styles.tickView}>
-          {currentMessage.sent && <Text style={[styles.tick, this.props.tickStyle, { color: currentMessage.seen ? Color.optionTintColor : Color.white }]}>✓</Text>}
-          {currentMessage.received && <Text style={[styles.tick, this.props.tickStyle, { color: currentMessage.seen ? Color.optionTintColor : Color.white }]}>✓</Text>}
+          {currentMessage.sent && <Text style={[styles.tick, this.props.tickStyle, { color: currentMessage.seen ? Color.orange : Color.white }]}>✓</Text>}
+          {currentMessage.received && <Text style={[styles.tick, this.props.tickStyle, { color: currentMessage.seen ? Color.orange : Color.white }]}>✓</Text>}
         </View>
       );
     }
@@ -204,7 +204,7 @@ const styles = {
     justifyContent: 'flex-end',
   },
   tick: {
-    fontSize: 10,
+    fontSize: 12,
     backgroundColor: Color.backgroundTransparent,
     color: Color.white,
   },
