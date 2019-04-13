@@ -13,4 +13,5 @@ export default {
   midnightBlue: '#2c3e50',
   optionTintColor: '#007AFF',
   timeTextColor: '#aaa',
+  orange:'#ffc107'
 };
